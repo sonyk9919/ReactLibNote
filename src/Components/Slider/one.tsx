@@ -67,7 +67,7 @@ const SliderOne = ({ images }: IProps) => {
   return (
     <Wrapper>
       <SliderLeftBtn changeId={changeId} />
-      <AnimatePresence custom={{ inverse }}>
+      <AnimatePresence custom={{ inverse }} mode="wait">
         <SliderImage
           imgurl={images[id]}
           key={id}
